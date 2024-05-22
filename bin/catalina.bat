@@ -219,6 +219,9 @@ rem Register custom URL handlers
 rem Do this here so custom URL handles (specifically 'war:...') can be used in the security policy
 set "JAVA_OPTS=%JAVA_OPTS% -Djava.protocol.handler.pkgs=org.apache.catalina.webresources"
 
+set JAVA_OPTS=-Xms512m -Xmx1024m 
+
+
 rem Check for the deprecated LOGGING_CONFIG
 rem Only use it if CATALINA_LOGGING_CONFIG is not set and LOGGING_CONFIG starts with "-D..."
 if not "%LOGGING_CONFIG:~0,2%"=="-D" goto noLoggingDeprecation

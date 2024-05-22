@@ -1286,3 +1286,7 @@
 22-May-2024 15:31:00.539 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Apache tomcat\apache-tomcat-9.0.89\webapps\ROOT] has finished in [23] ms
 22-May-2024 15:31:00.546 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-9999"]
 22-May-2024 15:31:00.946 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [12262] milliseconds
+22-May-2024 15:39:31.302 INFO [Catalina-utility-1] org.apache.catalina.users.MemoryUserDatabase.backgroundProcess Reloading memory user database [UserDatabase] from updated source [file:/C:/Apache%20tomcat/apache-tomcat-9.0.89/conf/tomcat-users.xml]
+22-May-2024 15:39:41.324 INFO [Catalina-utility-2] org.apache.catalina.startup.HostConfig.reload Reloading context [/manager]
+22-May-2024 15:39:41.325 INFO [Catalina-utility-2] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/manager] has started
+22-May-2024 15:39:41.382 INFO [Catalina-utility-2] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/manager] is completed

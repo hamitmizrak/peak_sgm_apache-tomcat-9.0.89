@@ -29,4 +29,31 @@
     <Manager pathname="" />
     -->
 
+    <!-- DataSource(Veri kaynagi)-->
+    <!-- Mysql Database JDBC: Java Database Connectivity -->
+    <Resource 
+    name="jdbc/mydbApacheTomcat" 
+    auth="Container"
+    type="javax.sql.DataSource"
+    username="root"
+    password="root"
+    driverClassName="com.mysql.cj.jdbc.Driver"
+    url="jdbc:mysql://localhost:3306/blog"
+    maxTotal="100"
+    maxIdle="30"
+    maxWaitMillis="15000"
+    />
+    <!-- 
+    name="jdbc/mydb" ==> Uygulama adı
+    auth="Container" ==> Authentication(Kimlik doğrulama) yetkisini container yöneticisi
+    type="javax.sql.DataSource" ==> Veri kaynağı türü
+    username="root" ==> Veritabanı kullanıcı adı
+    password="root" ==> Veritabanı şifresi
+    driverClassName="com.mysql.cj.jdbc.Driver" ==> Veritabanı sürücüsü
+    url="jdbc:mysql://localhost:3306/blog" ==> Veritabanı bağlantı adresi
+    maxTotal="100" ==> Maksimum bağlantı sayısı
+     maxIdle="30" ==> Havuzda boşta bekleyen max  bağlantı sayısı
+     maxWaitMillis="15000" ==> Bağlantı havuzunda boşta bekleyen bağlantıların maksimum bekleme süresi
+    -->
+
 </Context>
